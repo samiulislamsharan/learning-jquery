@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Slide Down</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function () {
+            // Slide down the div
+            $("#topBar").click(function () {
+                $("#panel").slideUp("1000");
+            });
+        });
+    </script>
+
+    <style>
+        #topBar,
+        #panel {
+            background-color: slateblue;
+            color: white;
+            text-align: center;
+            width: auto;
+            padding: 10px;
+            border: 2px solid black;
+        }
+
+        #panel {
+            margin-top: 5px;
+            padding: 80px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 class="head">Welcome to jQuery</h2>
+    <code>Method: $(selector).slideUp(speed,opacity,callback);</code> <br>
+
+    <div id="topBar">Top Bar</div>
+    <div id="panel">A panel that slides up</div>
+</body>
+</html>
