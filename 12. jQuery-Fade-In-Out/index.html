@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Fade In-Out</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function () {
+            // Fade in the divs
+            // $("#fade").click(function () {
+            //     $("#div1").fadeIn(500);
+            //     $("#div2").fadeIn(1000);
+            //     $("#div3").fadeIn(1500);
+            //     $("#div4").fadeIn(2000);
+            // });
+
+            // Fade out the divs
+            $("#fade").click(function () {
+                $("#div1").fadeOut(2000);
+                $("#div2").fadeOut(1500);
+                $("#div3").fadeOut(1000);
+                $("#div4").fadeOut(500);
+            });
+        });
+    </script>
+
+    <style>
+        .box {
+            background-color: slateblue;
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            /* add display: none; for fadeIn effect */
+        }
+    </style>
+</head>
+
+<body>
+    <h2 class="head">Welcome to jQuery</h2>
+
+    <button id="fade">Fade</button>
+
+    <div id="div1" class="box"></div>
+    <div id="div2" class="box"></div>
+    <div id="div3" class="box"></div>
+    <div id="div4" class="box"></div>
+</body>
+</html>

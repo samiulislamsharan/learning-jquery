@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Toggle</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $("#toggle").click(function () {
+                $(".para1").toggle(500);
+            });
+        });
+    </script>
+    <style>
+        .para1 {
+            background-color: slateblue;
+            color: white;
+            width: auto;
+            padding: 10px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h2 class="head">Welcome to jQuery</h2>
+
+    <p class="para1">This is a paragraph 1</p>
+
+    <button id="toggle">Toggle</button>
+</body>
+</html>

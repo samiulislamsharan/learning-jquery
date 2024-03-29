@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Fade Toggle</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function () {
+            // Fade toggle the divs
+            $("#fadeToggle").click(function () {
+                $("#div1").fadeToggle(2000);
+                $("#div2").fadeToggle(1500);
+                $("#div3").fadeToggle(1000);
+                $("#div4").fadeToggle(500);
+            });
+        });
+    </script>
+
+    <style>
+        .box {
+            background-color: slateblue;
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 class="head">Welcome to jQuery</h2>
+
+    <button id="fadeToggle">Fade Toggle</button>
+
+    <div id="div1" class="box"></div>
+    <div id="div2" class="box"></div>
+    <div id="div3" class="box"></div>
+    <div id="div4" class="box"></div>
+</body>
+</html>
