@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Other Selectors</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("this").hide();
+            });
+        });
+
+        // Other JQuery Selectors List with Short Description
+        // 1. :first - Selects the first element.
+        // 2. :last - Selects the last element.
+        // 3. :even - Selects all even elements.
+        // 4. :odd - Selects all odd elements.
+        // 5. :eq(index) - Selects the element at the specific index.
+        // 6. :gt(index) - Selects all elements with an index greater than the specified index.
+        // 7. :lt(index) - Selects all elements with an index less than the specified index.
+        // 8. :header - Selects all header elements (h1, h2, h3, h4, h5, h6).
+        // 9. :animated - Selects all elements that are in the process of an animation at the time the selector is run.
+        // 10. :focus - Selects the element that currently has focus.
+        // 11. :contains(text) - Selects all elements that contain the specified text.
+        // 12. :empty - Selects all elements that have no children (including text nodes).
+        // 13. :has(selector) - Selects elements that have one or more elements inside of them that matches the specified selector.
+        // 14. :parent - Selects all elements that are the parent of another element, including text nodes.
+        // 15. :hidden - Selects all elements that are hidden.
+        // 16. :visible - Selects all elements that are visible.
+        // 17. :root - Selects the highest ancestor of the current element.
+        // 18. :lang(language) - Selects all elements that are in a specified language.
+        // 19. :target - Selects the target element of the current URL.
+        // 20. :not(selector) - Selects all elements that do not match the given selector.
+        // 21. :nth-child(n) - Selects all elements that are the nth-child of their parent.
+        // 22. :nth-last-child(n) - Selects all elements that are the nth-child of their parent, counting from the last child.
+        // 23. :nth-of-type(n) - Selects all elements that are the nth-child of their parent of a specific type.
+        // 24. :nth-last-of-type(n) - Selects all elements that are the nth-child of their parent of a specific type, counting from the last child.
+        // 25. :first-child - Selects all elements that are the first child of their parent.
+        // 26. :last-child - Selects all elements that are the last child of their parent.
+        // 27. :first-of-type - Selects all elements that are the first child of their parent of a specific type.
+        // 28. :last-of-type - Selects all elements that are the last child of their parent of a specific type.
+        // 29. :only-child - Selects all elements that are the only child of their parent.
+        // 30. :only-of-type - Selects all elements that are the only child of their parent of a specific type.
+        // 31. :input - Selects all input, textarea, select and button elements.
+        // 32  tr:even - Selects all even rows in a table.
+        // 33. tr:odd - Selects all odd rows in a table.
+        // 34. this - Selects the current element.
+
+    </script>
+</head>
+<body>
+    <h2 class="head">This is a heading</h2>
+
+    <p class="para1">This is a paragraph 1</p>
+    <p class="para2">This is a paragraph 2</p>
+
+    <button>Hide</button>
+</body>
+</html>
