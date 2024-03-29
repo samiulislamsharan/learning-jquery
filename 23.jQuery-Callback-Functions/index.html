@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Callback Functions</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#hideElement").click(function () {
+                $("#box").toggle(1000, function () {
+                    alert("The box is now hidden");
+                });
+            });
+        });
+    </script>
+
+    <style>
+        #box {
+            background-color: slateblue;
+            color: white;
+            text-align: center;
+            width: 100px;
+            height: 100px;
+            margin-top: 5px;
+            padding: 10px;
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 class="head">Welcome to jQuery</h2>
+    <p>
+        <b>Callback functions: </b>A callback function is executed after the current effect is 100% finished.
+    </p>
+
+    <button id="hideElement">Hide/Show Element</button>
+
+    <div id="box">A box, hehe...</div>
+</body>
+</html>
