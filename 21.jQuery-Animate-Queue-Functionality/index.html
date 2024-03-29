@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Animate - Queue Functionality</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function () {
+            // Slide down the div
+            $("#animate").click(function () {
+                let box = $("#box");
+
+                box.animate({
+                    left: '500px',
+                    opacity: '0.4',
+                }, 500);
+
+                box.animate({
+                    height: '500px',
+                    opacity: '0.5',
+                }, 1000);
+
+                box.animate({
+                    width: '500px',
+                    opacity: '0.6',
+                }, 1500);
+
+                box.animate({
+                    height: '100px',
+                    opacity: '1',
+                }, 2000);
+            });
+        });
+    </script>
+
+    <style>
+        #box {
+            background-color: slateblue;
+            color: white;
+            text-align: center;
+            width: 100px;
+            height: 100px;
+            margin-top: 5px;
+            padding: 10px;
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 class="head">Welcome to jQuery</h2>
+
+    <button id="animate">Que Animation</button>
+
+    <div id="box">A box, hehe...</div>
+</body>
+</html>
