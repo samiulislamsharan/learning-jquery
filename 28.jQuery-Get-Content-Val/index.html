@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Get Content - Val</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#getValue").click(function () {
+                alert("Name: " + $("#name").val());
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <h2 class="head">jQuery Get Content - Val</h2>
+
+    <p id="text">
+        <label for="name">Name:</label>
+        <input type="text" id="name" value="Samiul Islam">
+    </p>
+
+    <button id="getValue">Get Value</button>
+</body>
+</html>

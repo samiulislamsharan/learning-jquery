@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery - After and Before</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#btn-insert-before").click(function () {
+                $("#text").before("<b>Before</b>");
+            });
+
+            $("#btn-insert-after").click(function () {
+                $("#text").after("<b>After</b><br>");
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <h2 class="head">jQuery - After and Before</h2>
+
+    <p id="text">This is Text</p> <br>
+
+    <button id="btn-insert-before">Insert Before</button>
+    <button id="btn-insert-after">Insert After</button>
+</html>

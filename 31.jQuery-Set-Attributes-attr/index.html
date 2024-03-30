@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Set Attributes - attr</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#setAttribute").click(function () {
+                $("#lnk")
+                    .attr({
+                        "href": "https://facebook.com",
+                        "title": "Facebook",
+                    })
+                    .text("Facebook");
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <h2 class="head">jQuery Set Attributes - attr</h2>
+
+    <p id="text">
+        <a href="https://youtube.com" id="lnk" target="_blank" rel="noopener" title="YouTube">YouTube</a>
+    </p>
+
+    <button id="setAttribute">Change Link</button>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Get Content - text and html</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#showText").click(function () {
+                alert("Text: " + $("#text").text());
+            });
+
+            $("#showHtml").click(function () {
+                alert("HTML: " + $("#text").html());
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <h2 class="head">jQuery Get Content - text and html</h2>
+
+    <p id="text">This is a <i>paragraph</i> and <b>it's simple</b></p>
+
+    <button id="showText">Show Text</button>
+    <button id="showHtml">Show HTML</button>
+</body>
+</html>

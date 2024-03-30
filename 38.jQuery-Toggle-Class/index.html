@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Toggle Class</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#btn-toggle-class").click(function () {
+                $("h2, h3").toggleClass("head-green");
+                $("p").toggleClass("text-color");
+            });
+        });
+    </script>
+
+    <style>
+        .head-green {
+            text-align: center;
+            color: slateblue;
+        }
+
+        .text-color {
+            color: red;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h2>jQuery Toggle Class</h2>
+    <h3>Click the button below to Add Class</h3>
+
+    <p>This is a paragraph</p>
+    <p>This is another paragraph</p>
+    <p>This is another another paragraph</p>
+
+    <button id="btn-toggle-class">Toggle Class</button>
+</body>
+</html>

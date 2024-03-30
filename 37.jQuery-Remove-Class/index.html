@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Remove Class</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#btn-remove-class").click(function () {
+                $("h2, h3").removeClass("head-class");
+            });
+        });
+    </script>
+
+    <style>
+        .head-class {
+            text-align: center;
+            color: slateblue;
+        }
+
+        .text-color {
+            color: red;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h2 class="head-class">jQuery Remove Class</h2>
+    <h3 class="head-class">Click the button below to Add Class</h3>
+
+    <p class="text-color">This is a paragraph</p>
+    <p class="text-color">This is another paragraph</p>
+    <p class="text-color">This is another another paragraph</p>
+
+    <button id="btn-remove-class">Remove Class</button>
+</body>
+</html>

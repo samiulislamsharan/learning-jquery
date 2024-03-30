@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Append and Preprend</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#append-text").click(function () {
+                $("#text").append(" <b>Appended Text</b>");
+            });
+
+            $("#append-list-item").click(function () {
+                $("#list").append("<li>PHP</li>");
+            });
+
+            $("#prepend-text").click(function () {
+                $("#text").prepend(" <b>Prepended Text</b>");
+            });
+
+            $("#prepend-list-item").click(function () {
+                $("#list").prepend("<li>Java</li>");
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <h2 class="head">jQuery Append and Preprend</h2>
+
+    <p id="text">This is Text 1</p>
+
+    <ol id="list">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ol>
+
+    <button id="append-text">Append Text</button>
+    <button id="append-list-item">Append List Item</button>
+
+    <br> <br>
+
+    <button id="prepend-text">Prepend Text</button>
+    <button id="prepend-list-item">Prepend List Item</button>
+</body>
+</html>

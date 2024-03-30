@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Set Content - text - html - val</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#resetText").click(function () {
+                $("#text1").text("This is NEW Text 1");
+            });
+
+            $("#resetHtml").click(function () {
+                $("#text2").html("<b>This is NEW Text 2</b>");
+            });
+
+            $("#resetValue").click(function () {
+                $("#name").val("Samiul Islam Sharan");
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <h2 class="head">jQuery Set Content - text - html - val</h2>
+
+    <p id="text1">This is Text 1</p>
+    <p id="text2">This is Text 2</p>
+
+    <p>
+        <label for="name">Name:</label>
+        <input type="text" id="name" value="Samiul Islam">
+    </p>
+
+    <button id="resetText">Reset Text</button>
+    <button id="resetHtml">Reset HTML</button>
+    <button id="resetValue">Reset Value</button>
+</body>
+</html>
